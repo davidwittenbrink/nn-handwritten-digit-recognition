@@ -5,5 +5,4 @@ target
 *.iws
 .idea
 out
-lib
 .DS_Store
