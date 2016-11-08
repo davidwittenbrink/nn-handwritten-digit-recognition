@@ -6,7 +6,7 @@ lazy val root = (project in file(".")).
   settings(
     name := "scala-neuralnet",
     version := "0.1",
-    scalaVersion := "2.11.5",
+    scalaVersion := "2.11.7",
     libraryDependencies ++= Seq(
       "com.typesafe.play" % "play-json_2.11" % "2.5.9",
       "org.scalanlp" %% "breeze" % "0.12",
