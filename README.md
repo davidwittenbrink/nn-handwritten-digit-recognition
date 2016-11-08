@@ -1,1 +1,0 @@
-# nn-handwritten-digit-recognition

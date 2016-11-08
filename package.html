@@ -1,0 +1,163 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>root - _root_</title>
+          <meta name="description" content="root - root " />
+          <meta name="keywords" content="root root " />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="lib/template.js"></script>
+      <script type="text/javascript" src="lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = 'index.html';
+            var hash = 'package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="lib/package_big.png" />
+        
+        <h1>root package</h1><span class="permalink">
+      <a href="index.html#package" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">root</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="_root_.MNIST" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MNIST"></a>
+      <a id="MNIST:MNIST"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MNIST$.html"><span class="name">MNIST</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#package@MNIST" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Helper functions for loading the MNIST dataset.</p><div class="fullcomment"><div class="comment cmt"><p>Helper functions for loading the MNIST dataset.
+Currently it loads MNIST data from CSV files.</p></div><dl class="attributes block"> <dt>To do</dt><dd><span class="cmt"><p>Introduce validation set for model selection
+</p></span>, <span class="cmt"><p>Switch to binary mnist format</p></span></dd><dt>See also</dt><dd><span class="cmt"><p><a href="http://pjreddie.com/projects/mnist-in-csv/" target="_blank">http://pjreddie.com/projects/mnist-in-csv/</a></p></span></dd></dl></div>
+    </li><li name="_root_.Main" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Main"></a>
+      <a id="Main:Main"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Main$.html"><span class="name">Main</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#package@Main" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A neural network designed to recognize handwritten digits.</p><div class="fullcomment"><div class="comment cmt"><p>A neural network designed to recognize handwritten digits.
+The learning data is taken from the MNIST dataset.
+</p></div></div>
+    </li><li name="_root_.NeuralNetClassifier" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NeuralNetClassifier"></a>
+      <a id="NeuralNetClassifier:NeuralNetClassifier"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="NeuralNetClassifier$.html"><span class="name">NeuralNetClassifier</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#package@NeuralNetClassifier" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An object containing several pure functions to solve classification tasks using neural networks
+with Stochastic Gradient Descent as learning algorithm.</p><div class="fullcomment"><div class="comment cmt"><p>An object containing several pure functions to solve classification tasks using neural networks
+with Stochastic Gradient Descent as learning algorithm. The implementation sticks to the math as explained
+in Michael Nielsen's fantastic book about neural networks.
+For an example how you could use this classifier for optical image recognition on the MNIST data set, see
+how it is used in the main function of this project.</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>
+     <a href="http://neuralnetworksanddeeplearning.com" target="_blank">http://neuralnetworksanddeeplearning.com</a>
+     <a href="Main$.html#main(args:Array[String]):Unit" class="extmbr" name="Main#main">Main.main</a></p></span></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

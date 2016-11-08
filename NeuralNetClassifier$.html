@@ -1,0 +1,836 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>NeuralNetClassifier - NeuralNetClassifier</title>
+          <meta name="description" content="NeuralNetClassifier - NeuralNetClassifier" />
+          <meta name="keywords" content="NeuralNetClassifier NeuralNetClassifier" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="lib/template.js"></script>
+      <script type="text/javascript" src="lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = 'index.html';
+            var hash = 'NeuralNetClassifier$';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="lib/object_big.png" />
+        
+        <h1>NeuralNetClassifier</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="_root_">package root</a>
+          </div></span></h3><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NeuralNetClassifier</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>An object containing several pure functions to solve classification tasks using neural networks
+with Stochastic Gradient Descent as learning algorithm. The implementation sticks to the math as explained
+in Michael Nielsen's fantastic book about neural networks.
+For an example how you could use this classifier for optical image recognition on the MNIST data set, see
+how it is used in the main function of this project.</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>
+     <a href="http://neuralnetworksanddeeplearning.com" target="_blank">http://neuralnetworksanddeeplearning.com</a>
+     <a href="Main$.html#main(args:Array[String]):Unit" class="extmbr" name="Main#main">Main.main</a></p></span></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="NeuralNetClassifier"><span>NeuralNetClassifier</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@##():Int" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="NeuralNetClassifier#activationFn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="activationFn(x:breeze.linalg.DenseVector[Double]):breeze.linalg.DenseVector[Double]"></a>
+      <a id="activationFn(DenseVector[Double]):DenseVector[Double]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">activationFn</span><span class="params">(<span name="x">x: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@activationFn(x:breeze.linalg.DenseVector[Double]):breeze.linalg.DenseVector[Double]" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a DenseVector with the sigmoid function applied to each element.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a DenseVector with the sigmoid function applied to each element.
+</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"><p>A DenseVector to which's elements the sigmoid function is applied.</p></dd><dt>returns</dt><dd class="cmt"><p>DenseVector with the sigmoid applied element-wise
+</p></dd></dl></div>
+    </li><li name="NeuralNetClassifier#activationFnDerivative" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="activationFnDerivative(x:breeze.linalg.DenseVector[Double]):breeze.linalg.DenseVector[Double]"></a>
+      <a id="activationFnDerivative(DenseVector[Double]):DenseVector[Double]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">activationFnDerivative</span><span class="params">(<span name="x">x: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@activationFnDerivative(x:breeze.linalg.DenseVector[Double]):breeze.linalg.DenseVector[Double]" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a DenseVector with the sigmoid derivative applied to each element.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a DenseVector with the sigmoid derivative applied to each element.
+</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"><p>A DenseVector to which's elements the sigmoid function derivative is applied.</p></dd><dt>returns</dt><dd class="cmt"><p>DenseVector with the sigmoid derivative applied element-wise
+</p></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="NeuralNetClassifier#calcClassificationScore" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="calcClassificationScore(weights:List[breeze.linalg.DenseMatrix[Double]],biases:List[breeze.linalg.DenseVector[Double]],testX:List[breeze.linalg.DenseVector[Double]],testY:List[breeze.linalg.SparseVector[Double]]):Double"></a>
+      <a id="calcClassificationScore(List[DenseMatrix[Double]],List[DenseVector[Double]],List[DenseVector[Double]],List[SparseVector[Double]]):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">calcClassificationScore</span><span class="params">(<span name="weights">weights: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="biases">biases: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="testX">testX: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="testY">testY: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.SparseVector">SparseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@calcClassificationScore(weights:List[breeze.linalg.DenseMatrix[Double]],biases:List[breeze.linalg.DenseVector[Double]],testX:List[breeze.linalg.DenseVector[Double]],testY:List[breeze.linalg.SparseVector[Double]]):Double" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Calculates the test score in percent (1.0 for 100%)
+</p><div class="fullcomment"><div class="comment cmt"><p>Calculates the test score in percent (1.0 for 100%)
+</p></div><dl class="paramcmts block"><dt class="param">weights</dt><dd class="cmt"><p>A list of the weight matrices of the network (e.g. generated by the function <a href="#generateRandomNetConfig(layers:List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" class="extmbr" name="NeuralNetClassifier#generateRandomNetConfig">generateRandomNetConfig</a>)</p></dd><dt class="param">biases</dt><dd class="cmt"><p>A list of the bias vectors of the network (e.g. generated by the function <a href="#generateRandomNetConfig(layers:List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" class="extmbr" name="NeuralNetClassifier#generateRandomNetConfig">generateRandomNetConfig</a>)</p></dd><dt class="param">testX</dt><dd class="cmt"><p>A list of test inputs</p></dd><dt class="param">testY</dt><dd class="cmt"><p>A list of desired outputs corresponding to the test inputs</p></dd><dt>returns</dt><dd class="cmt"><p>The percentage of correctly classified samples
+</p></dd></dl></div>
+    </li><li name="NeuralNetClassifier#calcDeltas" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="calcDeltas(weights:List[breeze.linalg.DenseMatrix[Double]],biases:List[breeze.linalg.DenseVector[Double]],networkOutput:breeze.linalg.DenseVector[Double],target:breeze.linalg.SparseVector[Double],zs:List[breeze.linalg.DenseVector[Double]]):List[breeze.linalg.DenseVector[Double]]"></a>
+      <a id="calcDeltas(List[DenseMatrix[Double]],List[DenseVector[Double]],DenseVector[Double],SparseVector[Double],List[DenseVector[Double]]):List[DenseVector[Double]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">calcDeltas</span><span class="params">(<span name="weights">weights: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="biases">biases: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="networkOutput">networkOutput: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="target">target: <span class="extype" name="breeze.linalg.SparseVector">SparseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="zs">zs: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@calcDeltas(weights:List[breeze.linalg.DenseMatrix[Double]],biases:List[breeze.linalg.DenseVector[Double]],networkOutput:breeze.linalg.DenseVector[Double],target:breeze.linalg.SparseVector[Double],zs:List[breeze.linalg.DenseVector[Double]]):List[breeze.linalg.DenseVector[Double]]" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a list of delta vectors needed for gradient descent.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a list of delta vectors needed for gradient descent.
+</p></div><dl class="paramcmts block"><dt class="param">weights</dt><dd class="cmt"><p>A list of the weight matrices of the network (e.g. generated by the function <a href="#generateRandomNetConfig(layers:List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" class="extmbr" name="NeuralNetClassifier#generateRandomNetConfig">generateRandomNetConfig</a>)</p></dd><dt class="param">biases</dt><dd class="cmt"><p>A list of the bias vectors of the network (e.g. generated by the function <a href="#generateRandomNetConfig(layers:List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" class="extmbr" name="NeuralNetClassifier#generateRandomNetConfig">generateRandomNetConfig</a>)</p></dd><dt class="param">networkOutput</dt><dd class="cmt"><p>The output of the network for the training sample</p></dd><dt class="param">target</dt><dd class="cmt"><p>The desired output of the network</p></dd><dt class="param">zs</dt><dd class="cmt"><p>A list of z vectors that were calculated while calculating the network output</p></dd><dt>returns</dt><dd class="cmt"><p>List of delta vectors</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="http://neuralnetworksanddeeplearning.com/chap2.html" target="_blank">http://neuralnetworksanddeeplearning.com/chap2.html</a>
+</p></span></dd></dl></div>
+    </li><li name="NeuralNetClassifier#calcNeuronOutput" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="calcNeuronOutput(input:breeze.linalg.DenseVector[Double],neuronWeights:breeze.linalg.Transpose[breeze.linalg.DenseVector[Double]],bias:Double):Double"></a>
+      <a id="calcNeuronOutput(DenseVector[Double],Transpose[DenseVector[Double]],Double):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">calcNeuronOutput</span><span class="params">(<span name="input">input: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="neuronWeights">neuronWeights: <span class="extype" name="breeze.linalg.Transpose">Transpose</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="bias">bias: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@calcNeuronOutput(input:breeze.linalg.DenseVector[Double],neuronWeights:breeze.linalg.Transpose[breeze.linalg.DenseVector[Double]],bias:Double):Double" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Calculates the output of a neuron for a given input vector [N X 1], the neuron weights [1 X N] and it's bias (scalar).</p><div class="fullcomment"><div class="comment cmt"><p>Calculates the output of a neuron for a given input vector [N X 1], the neuron weights [1 X N] and it's bias (scalar).
+</p></div><dl class="paramcmts block"><dt class="param">input</dt><dd class="cmt"><p>The input vector (dimension [N X 1])</p></dd><dt class="param">neuronWeights</dt><dd class="cmt"><p>The neuron weights as a row vector (dimension [1 X N])</p></dd><dt class="param">bias</dt><dd class="cmt"><p>The bias of the neuron</p></dd><dt>returns</dt><dd class="cmt"><p>The output for the given neuron
+</p></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@clone():Object" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="NeuralNetClassifier#costFnDerivative" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="costFnDerivative(target:breeze.linalg.SparseVector[Double],networkOutput:breeze.linalg.DenseVector[Double]):breeze.linalg.DenseVector[Double]"></a>
+      <a id="costFnDerivative(SparseVector[Double],DenseVector[Double]):DenseVector[Double]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">costFnDerivative</span><span class="params">(<span name="target">target: <span class="extype" name="breeze.linalg.SparseVector">SparseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="networkOutput">networkOutput: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@costFnDerivative(target:breeze.linalg.SparseVector[Double],networkOutput:breeze.linalg.DenseVector[Double]):breeze.linalg.DenseVector[Double]" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Calculates the quadratic cost derivative for a given target and network output.</p><div class="fullcomment"><div class="comment cmt"><p>Calculates the quadratic cost derivative for a given target and network output.</p><p>Quadratic cost:
+  (1/2) * sum( (target - networkOutput) ** 2 )
+Quadratic cost derivative:
+  networkOutput - target</p></div><dl class="paramcmts block"><dt class="param">target</dt><dd class="cmt"><p>The desired output of the network</p></dd><dt class="param">networkOutput</dt><dd class="cmt"><p>The output of the network</p></dd><dt>returns</dt><dd class="cmt"><p>A vector containing the costFn derivatives
+</p></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@finalize():Unit" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="NeuralNetClassifier#generateRandomBiasVectors" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="generateRandomBiasVectors(layers:List[Int]):List[breeze.linalg.DenseVector[Double]]"></a>
+      <a id="generateRandomBiasVectors(List[Int]):List[DenseVector[Double]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">generateRandomBiasVectors</span><span class="params">(<span name="layers">layers: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@generateRandomBiasVectors(layers:List[Int]):List[breeze.linalg.DenseVector[Double]]" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a list of random bias vectors for a given list of layer sizes.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a list of random bias vectors for a given list of layer sizes.
+</p></div><dl class="paramcmts block"><dt class="param">layers</dt><dd class="cmt"><p>A list of layer sizes. E.g. List(2, 3, 1) for a network with 2 input neurons, one hidden
+              layer with 3 neurons and an output layer with 1 neuron.
+</p></dd><dt>returns</dt><dd class="cmt"><p>List of random bias vectors
+</p></dd></dl></div>
+    </li><li name="NeuralNetClassifier#generateRandomNetConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="generateRandomNetConfig(layers:List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])"></a>
+      <a id="generateRandomNetConfig(List[Int]):(List[DenseMatrix[Double]],List[DenseVector[Double]])"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">generateRandomNetConfig</span><span class="params">(<span name="layers">layers: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result">: (<span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]], <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]])</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@generateRandomNetConfig(layers:List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a tuple of random weight matrices and random bias vectors for a given list of layer sizes.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a tuple of random weight matrices and random bias vectors for a given list of layer sizes.
+</p></div><dl class="paramcmts block"><dt class="param">layers</dt><dd class="cmt"><p>A list of layer sizes. E.g. List(2, 3, 1) for a network with 2 input neurons, one hidden
+              layer with 3 neurons and an output layer with 1 neuron.
+</p></dd><dt>returns</dt><dd class="cmt"><p>Tuple of list of random weights and list of random biases
+</p></dd></dl></div>
+    </li><li name="NeuralNetClassifier#generateRandomWeightMatrices" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="generateRandomWeightMatrices(layers:List[Int]):List[breeze.linalg.DenseMatrix[Double]]"></a>
+      <a id="generateRandomWeightMatrices(List[Int]):List[DenseMatrix[Double]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">generateRandomWeightMatrices</span><span class="params">(<span name="layers">layers: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@generateRandomWeightMatrices(layers:List[Int]):List[breeze.linalg.DenseMatrix[Double]]" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a list of random weight matrices for a given list of layer sizes.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a list of random weight matrices for a given list of layer sizes.
+</p></div><dl class="paramcmts block"><dt class="param">layers</dt><dd class="cmt"><p>A list of layer sizes. E.g. List(2, 3, 1) for a network with 2 input neurons, one hidden
+              layer with 3 neurons and an output layer with 1 neuron.
+</p></dd><dt>returns</dt><dd class="cmt"><p>List of random weight matrices
+</p></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="NeuralNetClassifier#getConfigFromSnapshot" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getConfigFromSnapshot(jsonString:String):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])"></a>
+      <a id="getConfigFromSnapshot(String):(List[DenseMatrix[Double]],List[DenseVector[Double]])"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getConfigFromSnapshot</span><span class="params">(<span name="jsonString">jsonString: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: (<span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]], <span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]])</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@getConfigFromSnapshot(jsonString:String):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a tuple of a list of weight matrices and a list of bias vectors from a JSON string.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a tuple of a list of weight matrices and a list of bias vectors from a JSON string. The JSON has to be in the
+same format as the snapshots of Carmen Popoviciu's JavaScript neuralnet implementation.
+</p></div><dl class="paramcmts block"><dt class="param">jsonString</dt><dd class="cmt"><p>A JSON string containing the weights and biases of the network in the format of
+                  Carmen Popoviciu's JavaScript neuralnet implementation.</p></dd><dt>returns</dt><dd class="cmt"><p>Tuple of a list of parsed weight matrices and a list of parsed bias vectors</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/CarmenPopoviciu/neural-net" target="_blank">https://github.com/CarmenPopoviciu/neural-net</a>
+</p></span></dd></dl></div>
+    </li><li name="NeuralNetClassifier#getJsonSnapshot" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getJsonSnapshot(weights:List[breeze.linalg.DenseMatrix[Double]],biases:List[breeze.linalg.DenseVector[Double]]):String"></a>
+      <a id="getJsonSnapshot(List[DenseMatrix[Double]],List[DenseVector[Double]]):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getJsonSnapshot</span><span class="params">(<span name="weights">weights: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="biases">biases: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@getJsonSnapshot(weights:List[breeze.linalg.DenseMatrix[Double]],biases:List[breeze.linalg.DenseVector[Double]]):String" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a JSON string containing the network configuration.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a JSON string containing the network configuration. The JSON is in the same format as the snapshots in
+Carmen Popoviciu's JavaScript neuralnet implementation to allow importing/exporting networks.
+</p></div><dl class="paramcmts block"><dt class="param">weights</dt><dd class="cmt"><p>A list of the weight matrices of the network (e.g. generated by the function <a href="#generateRandomNetConfig(layers:List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" class="extmbr" name="NeuralNetClassifier#generateRandomNetConfig">generateRandomNetConfig</a>)</p></dd><dt class="param">biases</dt><dd class="cmt"><p>A list of the bias vectors of the network (e.g. generated by the function <a href="#generateRandomNetConfig(layers:List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" class="extmbr" name="NeuralNetClassifier#generateRandomNetConfig">generateRandomNetConfig</a>)</p></dd><dt>returns</dt><dd class="cmt"><p>A JSON string containing the network configuration</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/CarmenPopoviciu/neural-net" target="_blank">https://github.com/CarmenPopoviciu/neural-net</a>
+</p></span></dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@hashCode():Int" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@notify():Unit" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="NeuralNetClassifier#predict" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="predict(weights:List[breeze.linalg.DenseMatrix[Double]],biases:List[breeze.linalg.DenseVector[Double]],input:breeze.linalg.DenseVector[Double]):(breeze.linalg.DenseVector[Double],List[breeze.linalg.DenseVector[Double]],List[breeze.linalg.DenseVector[Double]])"></a>
+      <a id="predict(List[DenseMatrix[Double]],List[DenseVector[Double]],DenseVector[Double]):(DenseVector[Double],List[DenseVector[Double]],List[DenseVector[Double]])"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">predict</span><span class="params">(<span name="weights">weights: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="biases">biases: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="input">input: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: (<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]], <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]])</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@predict(weights:List[breeze.linalg.DenseMatrix[Double]],biases:List[breeze.linalg.DenseVector[Double]],input:breeze.linalg.DenseVector[Double]):(breeze.linalg.DenseVector[Double],List[breeze.linalg.DenseVector[Double]],List[breeze.linalg.DenseVector[Double]])" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Given a config and input this function does a feedforward run and returns a tuple of</p><div class="fullcomment"><div class="comment cmt"><p>Given a config and input this function does a feedforward run and returns a tuple of</p><ul><li>The network output</li><li>A list of z vectors calculated along the way
+   for a detailed explanation)</li><li>A list of activation vectors (the output vectors of each layer)
+</li></ul></div><dl class="paramcmts block"><dt class="param">weights</dt><dd class="cmt"><p>A list of the weight matrices of the network (e.g. generated by the function <a href="#generateRandomNetConfig(layers:List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" class="extmbr" name="NeuralNetClassifier#generateRandomNetConfig">generateRandomNetConfig</a>)</p></dd><dt class="param">biases</dt><dd class="cmt"><p>A list of the bias vectors of the network (e.g. generated by the function <a href="#generateRandomNetConfig(layers:List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" class="extmbr" name="NeuralNetClassifier#generateRandomNetConfig">generateRandomNetConfig</a>)</p></dd><dt class="param">input</dt><dd class="cmt"><p>The input to the network</p></dd><dt>returns</dt><dd class="cmt"><p>Tuple of the network output, list of z vectors, list of activation vectors</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="http://neuralnetworksanddeeplearning.com/chap2.html#warm_up_a_fast_matrix-based_approach_to_computing_the_output_from_a_neural_network" target="_blank">http://neuralnetworksanddeeplearning.com/chap2.html#warm_up_a_fast_matrix-based_approach_to_computing_the_output_from_a_neural_network</a>
+</p></span></dd></dl></div>
+    </li><li name="NeuralNetClassifier#predictRecursive" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="predictRecursive(weights:List[breeze.linalg.DenseMatrix[Double]],biases:List[breeze.linalg.DenseVector[Double]],input:breeze.linalg.DenseVector[Double],layerIdx:Int,zs:List[breeze.linalg.DenseVector[Double]],activations:List[breeze.linalg.DenseVector[Double]]):(breeze.linalg.DenseVector[Double],List[breeze.linalg.DenseVector[Double]],List[breeze.linalg.DenseVector[Double]])"></a>
+      <a id="predictRecursive(List[DenseMatrix[Double]],List[DenseVector[Double]],DenseVector[Double],Int,List[DenseVector[Double]],List[DenseVector[Double]]):(DenseVector[Double],List[DenseVector[Double]],List[DenseVector[Double]])"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">predictRecursive</span><span class="params">(<span name="weights">weights: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="biases">biases: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="input">input: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="layerIdx">layerIdx: <span class="extype" name="scala.Int">Int</span></span>, <span name="zs">zs: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="activations">activations: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>)</span><span class="result">: (<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]], <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]])</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@predictRecursive(weights:List[breeze.linalg.DenseMatrix[Double]],biases:List[breeze.linalg.DenseVector[Double]],input:breeze.linalg.DenseVector[Double],layerIdx:Int,zs:List[breeze.linalg.DenseVector[Double]],activations:List[breeze.linalg.DenseVector[Double]]):(breeze.linalg.DenseVector[Double],List[breeze.linalg.DenseVector[Double]],List[breeze.linalg.DenseVector[Double]])" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Given a config and input this function does a feedforward run and returns a tuple of</p><div class="fullcomment"><div class="comment cmt"><p>Given a config and input this function does a feedforward run and returns a tuple of</p><ul><li>The network output</li><li>A list of z vectors calculated along the way</li><li>A list of activation vectors along the way (the output vectors of each layer)</li></ul><p>The output of the network is calculated in a recursive manner. To do this in an efficient (tail-recursive) way,
+this function needs some helper arguments. If you don't want to take care of the initialisation of these arguemnts
+yourself, the function <a href="#predict(weights:List[breeze.linalg.DenseMatrix[Double]],biases:List[breeze.linalg.DenseVector[Double]],input:breeze.linalg.DenseVector[Double]):(breeze.linalg.DenseVector[Double],List[breeze.linalg.DenseVector[Double]],List[breeze.linalg.DenseVector[Double]])" class="extmbr" name="NeuralNetClassifier#predict">predict</a> has an easier signature and does this for you.
+</p></div><dl class="paramcmts block"><dt class="param">weights</dt><dd class="cmt"><p>A list of the weight matrices of the network (e.g. generated by the function <a href="#generateRandomNetConfig(layers:List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" class="extmbr" name="NeuralNetClassifier#generateRandomNetConfig">generateRandomNetConfig</a>)</p></dd><dt class="param">biases</dt><dd class="cmt"><p>A list of the bias vectors of the network (e.g. generated by the function <a href="#generateRandomNetConfig(layers:List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" class="extmbr" name="NeuralNetClassifier#generateRandomNetConfig">generateRandomNetConfig</a>)</p></dd><dt class="param">input</dt><dd class="cmt"><p>The input to the network</p></dd><dt class="param">layerIdx</dt><dd class="cmt"><p>The index of the layer in the current recursion step (0 is input layer)</p></dd><dt class="param">zs</dt><dd class="cmt"><p>A list of z vectors that is calculated and accumulated along the way</p></dd><dt class="param">activations</dt><dd class="cmt"><p>A list of activation vectors that is calculated and accumulated along the way</p></dd><dt>returns</dt><dd class="cmt"><p>Tuple of the network output, list of z vectors, list of activation vectors</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="http://neuralnetworksanddeeplearning.com/chap2.html#warm_up_a_fast_matrix-based_approach_to_computing_the_output_from_a_neural_network" target="_blank">http://neuralnetworksanddeeplearning.com/chap2.html#warm_up_a_fast_matrix-based_approach_to_computing_the_output_from_a_neural_network</a>
+</p></span></dd></dl></div>
+    </li><li name="NeuralNetClassifier#randomNumbers" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="randomNumbers(n:Int,from:Int,to:Int):List[Int]"></a>
+      <a id="randomNumbers(Int,Int,Int):List[Int]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">randomNumbers</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="from">from: <span class="extype" name="scala.Int">Int</span></span>, <span name="to">to: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="scala.Int">Int</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@randomNumbers(n:Int,from:Int,to:Int):List[Int]" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a list of n random numbers
+</p><div class="fullcomment"><div class="comment cmt"><p>Returns a list of n random numbers
+</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>The number of random numbers</p></dd><dt class="param">from</dt><dd class="cmt"><p>The lower bound (inclusive)</p></dd><dt class="param">to</dt><dd class="cmt"><p>The upper bound (inclusive)</p></dd><dt>returns</dt><dd class="cmt"><p>A list of n random numbers between the bounds
+</p></dd></dl></div>
+    </li><li name="NeuralNetClassifier#recursiveCalcDeltas" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="recursiveCalcDeltas(weights:List[breeze.linalg.DenseMatrix[Double]],biases:List[breeze.linalg.DenseVector[Double]],networkOutput:breeze.linalg.DenseVector[Double],target:breeze.linalg.SparseVector[Double],zs:List[breeze.linalg.DenseVector[Double]],layerIdx:Int,deltas:List[breeze.linalg.DenseVector[Double]]):List[breeze.linalg.DenseVector[Double]]"></a>
+      <a id="recursiveCalcDeltas(List[DenseMatrix[Double]],List[DenseVector[Double]],DenseVector[Double],SparseVector[Double],List[DenseVector[Double]],Int,List[DenseVector[Double]]):List[DenseVector[Double]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">recursiveCalcDeltas</span><span class="params">(<span name="weights">weights: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="biases">biases: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="networkOutput">networkOutput: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="target">target: <span class="extype" name="breeze.linalg.SparseVector">SparseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="zs">zs: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="layerIdx">layerIdx: <span class="extype" name="scala.Int">Int</span></span>, <span name="deltas">deltas: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@recursiveCalcDeltas(weights:List[breeze.linalg.DenseMatrix[Double]],biases:List[breeze.linalg.DenseVector[Double]],networkOutput:breeze.linalg.DenseVector[Double],target:breeze.linalg.SparseVector[Double],zs:List[breeze.linalg.DenseVector[Double]],layerIdx:Int,deltas:List[breeze.linalg.DenseVector[Double]]):List[breeze.linalg.DenseVector[Double]]" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a list of delta vectors needed for gradient descent.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a list of delta vectors needed for gradient descent.</p><p>The list of delta vectors is calculated in a recursive manner. To achieve this efficiently (tail-recursive),
+some helper arguments are required. The function <a href="#calcDeltas(weights:List[breeze.linalg.DenseMatrix[Double]],biases:List[breeze.linalg.DenseVector[Double]],networkOutput:breeze.linalg.DenseVector[Double],target:breeze.linalg.SparseVector[Double],zs:List[breeze.linalg.DenseVector[Double]]):List[breeze.linalg.DenseVector[Double]]" class="extmbr" name="NeuralNetClassifier#calcDeltas">calcDeltas</a> initialises these arguments correctly and offers
+an easier signature.
+</p></div><dl class="paramcmts block"><dt class="param">weights</dt><dd class="cmt"><p>A list of the weight matrices of the network (e.g. generated by the function <a href="#generateRandomNetConfig(layers:List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" class="extmbr" name="NeuralNetClassifier#generateRandomNetConfig">generateRandomNetConfig</a>)</p></dd><dt class="param">biases</dt><dd class="cmt"><p>A list of the bias vectors of the network (e.g. generated by the function <a href="#generateRandomNetConfig(layers:List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" class="extmbr" name="NeuralNetClassifier#generateRandomNetConfig">generateRandomNetConfig</a>)</p></dd><dt class="param">networkOutput</dt><dd class="cmt"><p>The output of the network for the training sample</p></dd><dt class="param">target</dt><dd class="cmt"><p>The desired output of the network</p></dd><dt class="param">zs</dt><dd class="cmt"><p>A list of z vectors that were calculated while calculating the network output</p></dd><dt class="param">layerIdx</dt><dd class="cmt"><p>The index of the layer in the current recursion step. This should be initialised
+                to the length of weight matrices - 1 (meaning the nr of total layers - 2).</p></dd><dt class="param">deltas</dt><dd class="cmt"><p>The deltas calculated so far. This list is accumulated during the recursion steps and ultimately
+              returned in the last step.</p></dd><dt>returns</dt><dd class="cmt"><p>List of delta vectors</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>http://neuralnetworksanddeeplearning.com/chap2.html
+</p></span></dd></dl></div>
+    </li><li name="NeuralNetClassifier#sgd" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sgd(weights:List[breeze.linalg.DenseMatrix[Double]],biases:List[breeze.linalg.DenseVector[Double]],batchSize:Int,epochs:Int,learningRate:Double,trainX:List[breeze.linalg.DenseVector[Double]],trainY:List[breeze.linalg.SparseVector[Double]],shuffleFn:List[Int]=&gt;List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])"></a>
+      <a id="sgd(List[DenseMatrix[Double]],List[DenseVector[Double]],Int,Int,Double,List[DenseVector[Double]],List[SparseVector[Double]],(List[Int])⇒List[Int]):(List[DenseMatrix[Double]],List[DenseVector[Double]])"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sgd</span><span class="params">(<span name="weights">weights: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="biases">biases: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="batchSize">batchSize: <span class="extype" name="scala.Int">Int</span></span>, <span name="epochs">epochs: <span class="extype" name="scala.Int">Int</span></span>, <span name="learningRate">learningRate: <span class="extype" name="scala.Double">Double</span></span>, <span name="trainX">trainX: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="trainY">trainY: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.SparseVector">SparseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="shuffleFn">shuffleFn: (<span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Int">Int</span>]) ⇒ <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Int">Int</span>] = <span class="symbol">(l) =&gt; scala.util.Random.shuffle(l)</span></span>)</span><span class="result">: (<span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]], <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]])</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@sgd(weights:List[breeze.linalg.DenseMatrix[Double]],biases:List[breeze.linalg.DenseVector[Double]],batchSize:Int,epochs:Int,learningRate:Double,trainX:List[breeze.linalg.DenseVector[Double]],trainY:List[breeze.linalg.SparseVector[Double]],shuffleFn:List[Int]=&gt;List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Performs Stochastic Gradient Descent and returns a tuple of trained weights and biases.</p><div class="fullcomment"><div class="comment cmt"><p>Performs Stochastic Gradient Descent and returns a tuple of trained weights and biases.
+This method has the side effect of printing the current epoch number to the terminal.
+</p></div><dl class="paramcmts block"><dt class="param">weights</dt><dd class="cmt"><p>A list of the weight matrices of the network (e.g. generated by the function <a href="#generateRandomNetConfig(layers:List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" class="extmbr" name="NeuralNetClassifier#generateRandomNetConfig">generateRandomNetConfig</a>)</p></dd><dt class="param">biases</dt><dd class="cmt"><p>A list of the bias vectors of the network (e.g. generated by the function <a href="#generateRandomNetConfig(layers:List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" class="extmbr" name="NeuralNetClassifier#generateRandomNetConfig">generateRandomNetConfig</a>)</p></dd><dt class="param">batchSize</dt><dd class="cmt"><p>The size of one batch</p></dd><dt class="param">epochs</dt><dd class="cmt"><p>The number of epochs</p></dd><dt class="param">learningRate</dt><dd class="cmt"><p>The learning rate</p></dd><dt class="param">trainX</dt><dd class="cmt"><p>A list of training inputs</p></dd><dt class="param">trainY</dt><dd class="cmt"><p>A list of desired outputs corresponding to the training inputs</p></dd><dt>returns</dt><dd class="cmt"><p>Tuple of a list of trained weight matrices and a list of trained bias vectors
+</p></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@toString():String" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="NeuralNetClassifier#train" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="train(weights:List[breeze.linalg.DenseMatrix[Double]],biases:List[breeze.linalg.DenseVector[Double]],trainInput:List[breeze.linalg.DenseVector[Double]],trainTarget:List[breeze.linalg.SparseVector[Double]],learningRate:Double):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])"></a>
+      <a id="train(List[DenseMatrix[Double]],List[DenseVector[Double]],List[DenseVector[Double]],List[SparseVector[Double]],Double):(List[DenseMatrix[Double]],List[DenseVector[Double]])"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">train</span><span class="params">(<span name="weights">weights: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="biases">biases: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="trainInput">trainInput: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="trainTarget">trainTarget: <span class="extype" name="scala.List">List</span>[<span class="extype" name="breeze.linalg.SparseVector">SparseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>, <span name="learningRate">learningRate: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: (<span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]], <span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]])</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@train(weights:List[breeze.linalg.DenseMatrix[Double]],biases:List[breeze.linalg.DenseVector[Double]],trainInput:List[breeze.linalg.DenseVector[Double]],trainTarget:List[breeze.linalg.SparseVector[Double]],learningRate:Double):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This function returns an updated tuple of weights and biases after training the network on the given
+set of examples.</p><div class="fullcomment"><div class="comment cmt"><p>This function returns an updated tuple of weights and biases after training the network on the given
+set of examples.
+This function bascially implements the backpropagation algorithm.
+</p></div><dl class="paramcmts block"><dt class="param">weights</dt><dd class="cmt"><p>A list of the weight matrices of the network (e.g. generated by the function <a href="#generateRandomNetConfig(layers:List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" class="extmbr" name="NeuralNetClassifier#generateRandomNetConfig">generateRandomNetConfig</a>)</p></dd><dt class="param">biases</dt><dd class="cmt"><p>A list of the bias vectors of the network (e.g. generated by the function <a href="#generateRandomNetConfig(layers:List[Int]):(List[breeze.linalg.DenseMatrix[Double]],List[breeze.linalg.DenseVector[Double]])" class="extmbr" name="NeuralNetClassifier#generateRandomNetConfig">generateRandomNetConfig</a>)</p></dd><dt class="param">trainInput</dt><dd class="cmt"><p>A list of training inputs</p></dd><dt class="param">trainTarget</dt><dd class="cmt"><p>A list of desired outputs corresponding to trainInput</p></dd><dt class="param">learningRate</dt><dd class="cmt"><p>The learning rate</p></dd><dt>returns</dt><dd class="cmt"><p>Tuple of a list of trained weight matrices and a list of trained bias vectors</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="http://neuralnetworksanddeeplearning.com/chap2.html#the_backpropagation_algorithm" target="_blank">http://neuralnetworksanddeeplearning.com/chap2.html#the_backpropagation_algorithm</a>
+</p></span></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@wait():Unit" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#NeuralNetClassifier$@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
