@@ -6,10 +6,11 @@ lazy val root = (project in file(".")).
   settings(
     name := "scala-neuralnet",
     version := "0.1",
-    scalaVersion := "2.11.7",
+    scalaVersion := "2.11.8",
     libraryDependencies ++= Seq(
       "com.typesafe.play" % "play-json_2.11" % "2.5.9",
       "org.scalanlp" %% "breeze" % "0.12",
+      "com.github.scopt" %% "scopt" % "3.5.0",
       // native libraries are not included by default. add this if you want them (as of 0.7)
       // native libraries greatly improve performance, but increase jar sizes.
       // It also packages various blas implementations, which have licenses that may or may not
