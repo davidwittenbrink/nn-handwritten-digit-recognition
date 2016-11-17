@@ -1,4 +1,4 @@
-import breeze.linalg.{DenseMatrix, DenseVector, SparseVector, Transpose, argmax}
+import breeze.linalg.{DenseMatrix, DenseVector, SparseVector, argmax}
 import breeze.numerics.sigmoid
 import play.api.libs.json._
 
@@ -78,18 +78,7 @@ object NeuralNetClassifier {
     * @param networkOutput The output of the network
     * @return A vector containing the costFn derivatives
     */
-  def costFnDerivative(target: SparseVector[Double], networkOutput: DenseVector[Double]) = networkOutput :- target
-
-  /** Calculates the output of a neuron for a given input vector [N X 1], the neuron weights [1 X N] and it's bias (scalar).
-    *
-    * @param input The input vector (dimension [N X 1])
-    * @param neuronWeights The neuron weights as a row vector (dimension [1 X N])
-    * @param bias The bias of the neuron
-    * @return The output for the given neuron
-    */
-  def calcNeuronOutput(input: DenseVector[Double], neuronWeights: Transpose[DenseVector[Double]], bias: Double) = {
-    neuronWeights.inner.dot(input) + bias
-  }
+  def costFnPrime(target: SparseVector[Double], networkOutput: DenseVector[Double]) = networkOutput :- target
 
   /** Given a config and input this function does a feedforward run and returns a tuple of
     *  - The network output
@@ -130,21 +119,17 @@ object NeuralNetClassifier {
                        input: DenseVector[Double], layerIdx: Int, zs: List[DenseVector[Double]],
                        activations: List[DenseVector[Double]]): (DenseVector[Double], List[DenseVector[Double]], List[DenseVector[Double]]) = {
 
-    val nNextLyrNeurons = weights(layerIdx).rows
+    val w = weights(layerIdx)
+    val a = input
+    val b = biases(layerIdx)
+    val z = (w * a) + b
 
-    val out = (0 until nNextLyrNeurons).map(hiddenNeuronIdx => {
-      val w = weights(layerIdx)(hiddenNeuronIdx, ::)
-      val b = biases(layerIdx)(hiddenNeuronIdx)
-      calcNeuronOutput(input, w, b)
-    })
-
-    val z = DenseVector[Double](out.toArray)
-    val activation = activationFn(z)
+    val layerActivation = activationFn(z)
 
     if (layerIdx >= weights.length - 1) {
-      // We've calculated the outputs for the output layer
-      (activation, zs :+ z, activations :+ activation)
+      (layerActivation, zs :+ z, activations :+ layerActivation)
     } else {
+      val activation = activationFn(z)
       predictRecursive(weights, biases, activation, layerIdx + 1, zs :+ z, activations :+ activation)
     }
   }
@@ -189,7 +174,7 @@ object NeuralNetClassifier {
     case -1 => deltas
     case _ if layerIdx == (weights.length - 1) => {
       // Calculate updated weights for the output neuron
-      val delta = costFnDerivative(target, networkOutput) :* activationFnDerivative(zs.last)
+      val delta = costFnPrime(target, networkOutput) :* activationFnDerivative(zs.last)
       recursiveCalcDeltas(weights, biases, networkOutput, target, zs, layerIdx - 1, delta +: deltas)
     }
     case _ => {
